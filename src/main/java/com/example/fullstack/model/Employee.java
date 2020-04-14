@@ -1,12 +1,15 @@
 package com.example.fullstack.model;
 
 
+import lombok.Data;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.util.Objects;
 
 @Entity
+@Data
 public class Employee {
     private @Id @GeneratedValue Long id;
     private String firstName;
@@ -36,5 +39,14 @@ public class Employee {
     public int hashCode() {
 
         return Objects.hash(id, firstName, lastName, description);
+    }
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

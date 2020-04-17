@@ -24,7 +24,7 @@ public class Employee {
         this.description = description;
     }
 
-    @Override
+   /* @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -48,5 +48,5 @@ public class Employee {
                 ", lastName='" + lastName + '\'' +
                 ", description='" + description + '\'' +
                 '}';
-    }
+    }*/
 }
